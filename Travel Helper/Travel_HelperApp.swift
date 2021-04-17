@@ -12,7 +12,7 @@ struct Travel_HelperApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView{
-            ContentView()
+                ContentView(location:Location.example)
             }
         }
     }
