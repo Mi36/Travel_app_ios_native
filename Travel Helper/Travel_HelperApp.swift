@@ -11,8 +11,14 @@ import SwiftUI
 struct Travel_HelperApp: App {
     var body: some Scene {
         WindowGroup {
+            TabView{
             NavigationView{
                 ContentView(location:Location.example)
+            }
+            .tabItem {
+                Image(systemName: "airplane.circle.fill")
+                Text("Discover")
+            }
             }
         }
     }
