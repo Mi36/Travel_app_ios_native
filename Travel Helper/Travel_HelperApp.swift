@@ -19,6 +19,13 @@ struct Travel_HelperApp: App {
                 Image(systemName: "airplane.circle.fill")
                 Text("Discover")
             }
+                NavigationView{
+                    WorldView()
+                }
+                .tabItem {
+                    Image(systemName: "star.fill")
+                    Text("Locations")
+                }
             }
         }
     }
